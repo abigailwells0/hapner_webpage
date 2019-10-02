@@ -3,53 +3,143 @@ body {
 	height: 100%;
 	margin: 0;
 	display: block;
+	background-image: url("images/background_desktop.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .top-row{
+	content: url("images/Mountains_Hapner.png");
 	display:flex;
 	height: 60%;
-	width:100%
+	width:100%;
 }
 
 .bottom-row{
 	display: flex;
 	height: 40%;
-	width:100%
+	width:100%;
+	background-color:#538D81;
 }
 
 .side{
-	display:flex;
-	width:calc(100/3);
+	display:block;
+	width:32%;
 	height:100%;
 }
 .middle{
 	display:flex;
-	width:calc(100/3);
+	width:36%;
 	height:100%;
+	content: url("images/hairpin.png");
 }
 
-.blue{
-	background-image: url("images/background_desktop.jpg");
-}
 
-.turquoise{
-	background-color:#538D81;
-}
 
-.mountains {	
+/*.mountains {	
 	content: url("images/Mountains_Hapner.png");
 	height: 100%;
-	padding-top: 10%;
-	padding-right: 30px;
-	padding-bottom: 50px;
-	padding-left: 89px;
-	
-}
+	align-items:flex-end;
+	justify-content: center;
+}*/
 
 .center-horizontal {
-	align-items: center;	
+	align-items: center;
+}
+.center-bottom{
+	align-items:flex-end;
+	justify-content: center;
 }
 
 .center-vertical {
 	justify-content: center;
 }
+
+.thirds{
+	height: calc(100%/3);
+	width:100%;
+}
+
+p{
+	text-align: center;
+	font-family: 'Gayathri', sans-serif;
+}
+
+
+
+
+/*padding-top: 10%;
+	padding-right: 30px;
+	padding-bottom: 50px;
+	padding-left: 89px;*/
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 750px) {
+	
+	
+	body {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		display: block;
+		background-image: url("images/moblie1.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+
+	}
+
+	.top-row{
+		display:flex;
+		height: 60%;
+		width:100%;
+		content:url("images/mountains2.png");
+	}
+
+	.bottom-row{
+		display: flex;
+		height: 40%;
+		width:100%;
+		background-color:#E7AB68;
+	}
+	
+	.side{
+		display:block;
+		width:32%;
+		height:100%;
+	}
+	.middle{
+		display:flex;
+		width:36%;
+		height:100%;
+		content: url("images/hairpin.png");
+	}
+	
+	.thirds{
+		height: calc(100%/3);
+		width:100%;
+	}
+	.center-horizontal {
+		align-items: center;
+	}
+	.center-bottom{
+		align-items:flex-end;
+		justify-content: center;
+	}
+
+	.center-vertical {
+		justify-content: center;
+	}
+}
+
+	
+	
