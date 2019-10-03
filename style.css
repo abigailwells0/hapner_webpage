@@ -9,10 +9,13 @@ body {
 }
 
 .top-row{
-	content: url("images/Mountains_Hapner.png");
 	display:flex;
 	height: 60%;
 	width:100%;
+}
+
+.mountains{
+	content: url("images/Mountains_Hapner.png");
 }
 
 .bottom-row{
@@ -32,6 +35,8 @@ body {
 	width:36%;
 	height:100%;
 	content: url("images/hairpin.png");
+	max-height: 55%;
+	max-width: 55%;
 }
 
 
@@ -59,10 +64,17 @@ body {
 	height: calc(100%/3);
 	width:100%;
 }
-
+.contain-image {
+	max-height: 75%;
+	max-width: 75%;
+}
 p{
 	text-align: center;
 	font-family: 'Gayathri', sans-serif;
+	color: #0d3749;
+	font-size: 300%;
+	margin-block-start: 0em;
+    margin-block-end: 0em;
 }
 
 
@@ -92,16 +104,22 @@ p{
 		height: 100%;
 		margin: 0;
 		display: block;
-		background-image: url("images/moblie1.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
-
 	}
+	
+	.contain-image {
+		max-height: 75%;
+		max-width: 75%;
+}
 
 	.top-row{
 		display:flex;
 		height: 60%;
 		width:100%;
+		background-image: url("images/moblie1.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.mountains{		
 		content:url("images/mountains2.png");
 	}
 
@@ -122,23 +140,40 @@ p{
 		width:36%;
 		height:100%;
 		content: url("images/hairpin.png");
+		max-height: 75%;
+		max-width: 75%;
 	}
 	
 	.thirds{
+		display:flex;
 		height: calc(100%/3);
 		width:100%;
 	}
 	.center-horizontal {
 		align-items: center;
 	}
-	.center-bottom{
-		align-items:flex-end;
-		justify-content: center;
-	}
 
 	.center-vertical {
 		justify-content: center;
 	}
+	.center-right{
+		align-items:center;
+		justify-content:flex-start;
+	}
+	.center-left{
+		align-items:center;
+		justify-content:flex-end;
+	}
+	p{
+		text-align: center;
+		font-family: 'Gayathri', sans-serif;
+		color: #0d3749;
+		font-size: 200%;
+		margin-block-start: 0em;
+		margin-block-end: 0em;
+}
+
+		
 }
 
 	
