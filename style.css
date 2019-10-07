@@ -1,3 +1,5 @@
+/*background covers the whole body*/
+
 body {
 	width: 100%;
 	height: 100%;
@@ -39,15 +41,6 @@ body {
 	max-width: 55%;
 }
 
-
-
-/*.mountains {	
-	content: url("images/Mountains_Hapner.png");
-	height: 100%;
-	align-items:flex-end;
-	justify-content: center;
-}*/
-
 .center-horizontal {
 	align-items: center;
 }
@@ -74,30 +67,11 @@ p{
 	color: #0d3749;
 	font-size: 300%;
 	margin-block-start: 0em;
-    margin-block-end: 0em;
+   	margin-block-end: 0em;
 }
 
-
-
-
-/*padding-top: 10%;
-	padding-right: 30px;
-	padding-bottom: 50px;
-	padding-left: 89px;*/
-
-
-
-
-
-
-
-
-
-
-
-
+/*media query used to switch image and columns at 750px*/
 @media only screen and (max-width: 750px) {
-	
 	
 	body {
 		width: 100%;
@@ -109,7 +83,7 @@ p{
 	.contain-image {
 		max-height: 75%;
 		max-width: 75%;
-}
+	}
 
 	.top-row{
 		display:flex;
@@ -122,7 +96,7 @@ p{
 	.mountains{		
 		content:url("images/mountains2.png");
 	}
-
+/*backgrounf color changes at 750px*/
 	.bottom-row{
 		display: flex;
 		height: 40%;
@@ -143,7 +117,7 @@ p{
 		max-height: 75%;
 		max-width: 75%;
 	}
-	
+	/*rows divided into 3*/
 	.thirds{
 		display:flex;
 		height: calc(100%/3);
@@ -171,7 +145,7 @@ p{
 		font-size: 200%;
 		margin-block-start: 0em;
 		margin-block-end: 0em;
-}
+	}
 
 		
 }
